@@ -1,5 +1,7 @@
 export default {
   'menu.home': '首页',
+  'menu.transitMap': '公交信息',
+  'menu.transitMap.transit_map': '公交地图',
   'menu.dashboard': 'Dashboard',
   'menu.dashboard.analysis': '分析页',
   'menu.dashboard.monitor': '监控页',

@@ -6,8 +6,6 @@ export default [
     routes: [
       { path: '/user', redirect: '/user/login' },
       { path: '/user/login', component: './User/Login' },
-      { path: '/user/register', component: './User/Register' },
-      { path: '/user/register-result', component: './User/RegisterResult' },
     ],
   },
   // app
@@ -17,7 +15,19 @@ export default [
     Routes: ['src/pages/Authorized'],
     authority: ['admin', 'user'],
     routes: [
-      { path: '/', redirect: '/exception/403' },
+      { path: '/', redirect: '/transitMap' },
+      {
+        name: 'transitMap',
+        icon: 'book',
+        path: '/transitMap',
+        routes: [
+          {
+            path: '/transitMap',
+            name: 'transit_map',
+            component: './TransitMap/TransitMap',
+          },
+        ]
+      },
       {
         name: 'exception',
         icon: 'warning',

@@ -31,9 +31,11 @@ export default class GlobalHeader extends PureComponent {
             <img src={logo} alt="logo" width="32" />
           </Link>
         )}
-        <span className={styles.trigger} onClick={this.toggle}>
-          <Icon type={collapsed ? 'menu-unfold' : 'menu-fold'} />
-        </span>
+        <Icon
+          className={styles.trigger}
+          type={collapsed ? 'menu-unfold' : 'menu-fold'}
+          onClick={this.toggle}
+        />
         <RightContent {...this.props} />
       </div>
     );
